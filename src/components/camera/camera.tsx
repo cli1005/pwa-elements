@@ -167,6 +167,7 @@ export class CameraPWA {
         await this.flashScreen();
         this.photo = photo;
         this.photoSrc = URL.createObjectURL(photo);
+        this.handlePhoto && this.handlePhoto(this.photo);
       } catch (e) {
         console.error('Unable to take photo!', e);
       }
