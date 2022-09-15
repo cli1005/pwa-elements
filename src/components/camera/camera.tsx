@@ -165,8 +165,8 @@ export class CameraPWA {
         });
         
         await this.flashScreen();
-
-        this.promptAccept(photo);
+        this.photo = photo;
+        this.photoSrc = URL.createObjectURL(photo);
       } catch (e) {
         console.error('Unable to take photo!', e);
       }
