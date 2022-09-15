@@ -16,7 +16,7 @@
     "start": "stencil build --dev --watch --serve",
     "release": "np",
     "version": "npm run build"
-    "postinstall": "npm run build"
+    "prepare": "npm run build"
   },
   "repository": {
     "type": "git",
